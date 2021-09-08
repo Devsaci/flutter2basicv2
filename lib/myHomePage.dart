@@ -22,17 +22,20 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 20,
             ),
             Container(
+              margin: EdgeInsets.all(20.0),
               color: Colors.green,
               child: TextField(
                 decoration: InputDecoration(
-                    labelText: "labelText",
+                  icon: Icon(Icons.mail_outline),
+                    labelText: "Adress Mail",
                     labelStyle: TextStyle(
                       fontSize: 20,
                     ),
-                    hintText: "hintText",
+                    hintText: "Entrer adress Mail",
                     hintStyle: TextStyle(
-                      fontSize: 20,
-                    )),
+                      fontSize: 30,
+                    )
+                ),
                 keyboardType: TextInputType.emailAddress,
               ),
             ),
