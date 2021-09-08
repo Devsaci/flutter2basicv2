@@ -13,6 +13,8 @@ class _MyHomePageState extends State<MyHomePage> {
   var b = Colors.black;
   var w = Colors.white;
   var r = Colors.red;
+  var br = Colors.brown;
+  var dp = Colors.deepPurple;
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 // color: Colors.lime,
                 child: TextField(
                   decoration: InputDecoration(
+                      fillColor: dp,
+                      filled: true,
                       enabledBorder: OutlineInputBorder(
                         borderSide:
                         BorderSide(width: 3, color: Colors.greenAccent),
