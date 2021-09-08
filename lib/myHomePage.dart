@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.orange,
                 child: TextField(
                   decoration: InputDecoration(
-                      icon: IconButton(
+                      suffixIcon: IconButton(
                         icon: Icon(
                           passwordVisible? Icons.visibility_off: Icons.visibility,
                           color: Colors.black,
