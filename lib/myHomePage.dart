@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              //box n 1
+              //box n 1 email
               SizedBox(
                 height: 20,
               ),
@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   keyboardType: TextInputType.emailAddress,
                 ),
               ),
-              //box n 2
+              //box n 1 Passworde
               SizedBox(
                 height: 20,
               ),
@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   obscureText: true,
                 ),
               ),
-              //box n 3
+              //box n 2 email
               SizedBox(
                 height: 20,
               ),
@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   keyboardType: TextInputType.emailAddress,
                 ),
               ),
-              //box n 4
+              //box n 2 Passworde
               SizedBox(
                 height: 20,
               ),
@@ -101,7 +101,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: TextField(
                   decoration: InputDecoration(
                       icon: IconButton(
-                        icon: Icon(Icons.visibility_off),
+                        icon: Icon(
+                          passwordVisible? Icons.visibility_off: Icons.visibility,
+                          color: Colors.black,
+                        ),
                         onPressed: (){
                           setState(() {
                           passwordVisible=!passwordVisible;
@@ -118,6 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   obscureText: passwordVisible,
                 ),
               ),
+              //box n 3 email
               SizedBox(
                 height: 20,
               ),
@@ -140,6 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   keyboardType: TextInputType.emailAddress,
                 ),
               ),
+              //box n 3 Passworde
               SizedBox(
                 height: 20,
               ),
