@@ -24,6 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Container(
         color: Colors.black,
+        height: 300,
         child: SingleChildScrollView(
           child: Column(
             children: [
