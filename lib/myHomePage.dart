@@ -98,8 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.orange,
                 child: TextField(
                   decoration: InputDecoration(
-                      icon: Icon(
-                        Icons.password, size: 30, color: Colors.black,),
+                      icon: IconButton(onPressed: null, icon: Icon(Icons.visibility)),
                       labelText: "Passeword",
                       labelStyle: TextStyle(
                           fontSize: 20,
