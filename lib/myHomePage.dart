@@ -33,11 +33,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 // color: Colors.lime,
                 child: TextField(
                   decoration: InputDecoration(
-                      border: OutlineInputBorder(
+                      enabledBorder: OutlineInputBorder(
                         borderSide:
-                        const BorderSide(width: 3, color: Colors.lime),
+                        BorderSide(width: 3, color: Colors.greenAccent),
                         borderRadius:
-                        const BorderRadius.all(Radius.circular(6.0)),
+                        BorderRadius.all(Radius.circular(30.0)),
                       ),
 
                       labelText: "TextField",
