@@ -16,65 +16,143 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              margin: EdgeInsets.all(20.0),
-              color: Colors.lime,
-              child: TextField(
-                decoration: InputDecoration(
-                  icon: Icon(Icons.mail_outline,size: 30,color: Colors.black,),
-                    labelText: "Adress Mail",
-                    labelStyle: TextStyle(
-                      fontSize: 20,
-                        color: Colors.black
-                    ),
-                    hintText: "Enter eMail",
-                    hintStyle: TextStyle(
-                      fontSize: 15,
-                    )
-                ),
-                keyboardType: TextInputType.emailAddress,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 20,
               ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              margin: EdgeInsets.all(20.0),
-              color: Colors.orange,
-              child: TextField(
-                decoration: InputDecoration(
-                    icon: Icon(Icons.password,size: 30,color: Colors.black,),
-                    labelText: "Passeword",
-                    labelStyle: TextStyle(
+              Container(
+                margin: EdgeInsets.all(20.0),
+                color: Colors.lime,
+                child: TextField(
+                  decoration: InputDecoration(
+                    icon: Icon(Icons.mail_outline,size: 30,color: Colors.black,),
+                      labelText: "Adress Mail",
+                      labelStyle: TextStyle(
                         fontSize: 20,
-                        color: Colors.black
-                    ),
-                    hintText: "Enter Passeword",
-                    hintStyle: TextStyle(
-                      fontSize: 15,
-                    )
-                ),
-                keyboardType: TextInputType.visiblePassword,
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              color: Colors.deepPurple,
-              child: TextField(
-                decoration: InputDecoration(
-                  labelText: "labelText",
-                  hintText: "hintText",
+                          color: Colors.black
+                      ),
+                      hintText: "Enter eMail",
+                      hintStyle: TextStyle(
+                        fontSize: 15,
+                      )
+                  ),
+                  keyboardType: TextInputType.emailAddress,
                 ),
               ),
-            )
-          ],
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                margin: EdgeInsets.all(20.0),
+                color: Colors.orange,
+                child: TextField(
+                  decoration: InputDecoration(
+                      icon: Icon(Icons.password,size: 30,color: Colors.black,),
+                      labelText: "Passeword",
+                      labelStyle: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black
+                      ),
+                      hintText: "Enter Passeword",
+                      hintStyle: TextStyle(
+                        fontSize: 15,
+                      )
+                  ),
+                  keyboardType: TextInputType.visiblePassword,
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                margin: EdgeInsets.all(20.0),
+                color: Colors.lime,
+                child: TextField(
+                  decoration: InputDecoration(
+                      icon: Icon(Icons.mail_outline,size: 30,color: Colors.black,),
+                      labelText: "Adress Mail",
+                      labelStyle: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black
+                      ),
+                      hintText: "Enter eMail",
+                      hintStyle: TextStyle(
+                        fontSize: 15,
+                      )
+                  ),
+                  keyboardType: TextInputType.emailAddress,
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                margin: EdgeInsets.all(20.0),
+                color: Colors.orange,
+                child: TextField(
+                  decoration: InputDecoration(
+                      icon: Icon(Icons.password,size: 30,color: Colors.black,),
+                      labelText: "Passeword",
+                      labelStyle: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black
+                      ),
+                      hintText: "Enter Passeword",
+                      hintStyle: TextStyle(
+                        fontSize: 15,
+                      )
+                  ),
+                  keyboardType: TextInputType.visiblePassword,
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                margin: EdgeInsets.all(20.0),
+                color: Colors.lime,
+                child: TextField(
+                  decoration: InputDecoration(
+                      icon: Icon(Icons.mail_outline,size: 30,color: Colors.black,),
+                      labelText: "Adress Mail",
+                      labelStyle: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black
+                      ),
+                      hintText: "Enter eMail",
+                      hintStyle: TextStyle(
+                        fontSize: 15,
+                      )
+                  ),
+                  keyboardType: TextInputType.emailAddress,
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                margin: EdgeInsets.all(20.0),
+                color: Colors.orange,
+                child: TextField(
+                  decoration: InputDecoration(
+                      icon: Icon(Icons.password,size: 30,color: Colors.black,),
+                      labelText: "Passeword",
+                      labelStyle: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black
+                      ),
+                      hintText: "Enter Passeword",
+                      hintStyle: TextStyle(
+                        fontSize: 15,
+                      )
+                  ),
+                  keyboardType: TextInputType.visiblePassword,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
