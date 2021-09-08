@@ -23,17 +23,18 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Container(
               margin: EdgeInsets.all(20.0),
-              color: Colors.green,
+              color: Colors.lime,
               child: TextField(
                 decoration: InputDecoration(
-                  icon: Icon(Icons.mail_outline),
+                  icon: Icon(Icons.mail_outline,size: 30,color: Colors.black,),
                     labelText: "Adress Mail",
                     labelStyle: TextStyle(
                       fontSize: 20,
+                        color: Colors.black
                     ),
-                    hintText: "Entrer adress Mail",
+                    hintText: "Enter eMail",
                     hintStyle: TextStyle(
-                      fontSize: 30,
+                      fontSize: 15,
                     )
                 ),
                 keyboardType: TextInputType.emailAddress,
@@ -43,13 +44,22 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 20,
             ),
             Container(
-              color: Colors.red,
+              margin: EdgeInsets.all(20.0),
+              color: Colors.orange,
               child: TextField(
                 decoration: InputDecoration(
-                  labelText: "labelText",
-                  labelStyle: TextStyle(fontSize: 20),
-                  hintText: "hintText",
+                    icon: Icon(Icons.password,size: 30,color: Colors.black,),
+                    labelText: "Passeword",
+                    labelStyle: TextStyle(
+                        fontSize: 20,
+                        color: Colors.black
+                    ),
+                    hintText: "Enter Passeword",
+                    hintStyle: TextStyle(
+                      fontSize: 15,
+                    )
                 ),
+                keyboardType: TextInputType.visiblePassword,
               ),
             ),
             SizedBox(
