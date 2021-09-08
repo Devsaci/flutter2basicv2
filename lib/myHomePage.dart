@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -27,7 +25,6 @@ class _MyHomePageState extends State<MyHomePage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              //box n 1 email
               SizedBox(
                 height: 20,
               ),
@@ -36,16 +33,39 @@ class _MyHomePageState extends State<MyHomePage> {
                 // color: Colors.lime,
                 child: TextField(
                   decoration: InputDecoration(
-                      icon: Icon(
-                        Icons.mail_outline,
-                        size: 30,
-                          color: r
+                      border: OutlineInputBorder(
+                        borderSide:
+                        const BorderSide(width: 3, color: Colors.lime),
+                        borderRadius:
+                        const BorderRadius.all(Radius.circular(6.0)),
                       ),
+
+                      labelText: "TextField",
+                      labelStyle: TextStyle(fontSize: 20, color: r),
+                      hintText: "TextField",
+                      hintStyle: TextStyle(fontSize: 15, color: w)),
+                  keyboardType: TextInputType.text,
+                  style: TextStyle(color: w),
+                ),
+              ),
+              //box n 1 email
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                child: TextField(
+                  decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderSide:
+                        const BorderSide(width: 3, color: Colors.lime),
+                        borderRadius:
+                        const BorderRadius.all(Radius.circular(6.0)),
+                      ),
+                      icon: Icon(Icons.mail_outline, size: 30, color: r),
                       labelText: "Adress Mail",
                       labelStyle: TextStyle(fontSize: 20, color: r),
                       hintText: "Enter eMail",
-                      hintStyle: TextStyle(fontSize: 15, color: w)
-                  ),
+                      hintStyle: TextStyle(fontSize: 15, color: w)),
                   keyboardType: TextInputType.emailAddress,
                   style: TextStyle(color: w),
                 ),
@@ -53,23 +73,17 @@ class _MyHomePageState extends State<MyHomePage> {
               //box n 1 Passworde
               SizedBox(
                 height: 20,
-
               ),
               Container(
                 margin: EdgeInsets.all(20.0),
                 // color: Colors.orange,
                 child: TextField(
                   decoration: InputDecoration(
-                      icon: Icon(
-                        Icons.password,
-                        size: 30,
-                          color: r
-                      ),
+                      icon: Icon(Icons.password, size: 30, color: r),
                       labelText: "Passeword",
                       labelStyle: TextStyle(fontSize: 20, color: r),
                       hintText: "Enter Passeword",
-                      hintStyle: TextStyle(fontSize: 15, color: w)
-                  ),
+                      hintStyle: TextStyle(fontSize: 15, color: w)),
                   keyboardType: TextInputType.visiblePassword,
                   obscureText: true,
                   style: TextStyle(color: w),
@@ -84,18 +98,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 // color: Colors.lime,
                 child: TextField(
                   decoration: InputDecoration(
-                      prefixIcon: Icon(
-                        Icons.mail_outline,
-                        size: 30,
-                          color: r
-                      ),
+                      prefixIcon: Icon(Icons.mail_outline, size: 30, color: r),
                       labelText: "Adress Mail",
-                      labelStyle: TextStyle(fontSize: 20,
-                          color: r),
+                      labelStyle: TextStyle(fontSize: 20, color: r),
                       hintText: "Enter eMail",
-                      hintStyle: TextStyle(
-                        fontSize: 15, color: r
-                      )),
+                      hintStyle: TextStyle(fontSize: 15, color: r)),
                   keyboardType: TextInputType.emailAddress,
                   style: TextStyle(color: w),
                 ),
@@ -111,11 +118,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: InputDecoration(
                       suffixIcon: IconButton(
                         icon: Icon(
-                          passwordVisible
-                              ? Icons.visibility_off
-                              : Icons.visibility,
-                            color: r
-                        ),
+                            passwordVisible
+                                ? Icons.visibility_off
+                                : Icons.visibility,
+                            color: r),
                         onPressed: () {
                           setState(() {
                             passwordVisible = !passwordVisible;
@@ -123,11 +129,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                       ),
                       labelText: "Passeword",
-                      labelStyle: TextStyle(fontSize: 20,color: r),
+                      labelStyle: TextStyle(fontSize: 20, color: r),
                       hintText: "Enter Passeword",
-                      hintStyle: TextStyle(
-                        fontSize: 15,color: r
-                      )),
+                      hintStyle: TextStyle(fontSize: 15, color: r)),
                   keyboardType: TextInputType.visiblePassword,
                   obscureText: passwordVisible,
                   style: TextStyle(color: w),
@@ -150,9 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       labelText: "Adress Mail",
                       labelStyle: TextStyle(fontSize: 20, color: Colors.black),
                       hintText: "Enter eMail",
-                      hintStyle: TextStyle(
-                        fontSize: 15,color: w
-                      )),
+                      hintStyle: TextStyle(fontSize: 15, color: w)),
                   keyboardType: TextInputType.emailAddress,
                   style: TextStyle(color: w),
                 ),
@@ -174,9 +176,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       labelText: "Passeword",
                       labelStyle: TextStyle(fontSize: 20, color: Colors.black),
                       hintText: "Enter Passeword",
-                      hintStyle: TextStyle(
-                        fontSize: 15,color: w
-                      )),
+                      hintStyle: TextStyle(fontSize: 15, color: w)),
                   keyboardType: TextInputType.visiblePassword,
                   style: TextStyle(color: w),
                 ),
