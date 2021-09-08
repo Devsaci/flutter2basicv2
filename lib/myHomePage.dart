@@ -104,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         icon: Icon(Icons.visibility_off),
                         onPressed: (){
                           setState(() {
-
+                          passwordVisible=!passwordVisible;
                           });
                         },
                       ),
