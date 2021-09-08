@@ -9,6 +9,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  bool passwordVisible = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -110,6 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       )
                   ),
                   keyboardType: TextInputType.visiblePassword,
+                  obscureText:true,
                 ),
               ),
               SizedBox(
