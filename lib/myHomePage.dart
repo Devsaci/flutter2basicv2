@@ -23,8 +23,8 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
-        color: Colors.black,
-        height: 300,
+        color: b,
+        height: double.infinity,
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -189,6 +189,18 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+          backgroundColor: w,
+          onPressed: () {
+            setState(() {
+               b = b==Colors.black?Colors.white:Colors.black;
+               w = b==Colors.white?Colors.black:Colors.white;
+               r = Colors.blue;
+               br = Colors.brown;
+               dp = Colors.yellow;
+            });
+          }
       ),
     );
   }
