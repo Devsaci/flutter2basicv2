@@ -22,6 +22,38 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 20,
             ),
             Container(
+              color: Colors.green,
+              child: TextField(
+                decoration: InputDecoration(
+                    labelText: "labelText",
+                    labelStyle: TextStyle(
+                      fontSize: 20,
+                    ),
+                    hintText: "hintText",
+                    hintStyle: TextStyle(
+                      fontSize: 20,
+                    )),
+                keyboardType: TextInputType.emailAddress,
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              color: Colors.red,
+              child: TextField(
+                decoration: InputDecoration(
+                  labelText: "labelText",
+                  labelStyle: TextStyle(fontSize: 20),
+                  hintText: "hintText",
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              color: Colors.deepPurple,
               child: TextField(
                 decoration: InputDecoration(
                   labelText: "labelText",
