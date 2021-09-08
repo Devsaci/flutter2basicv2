@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       )
                   ),
                   keyboardType: TextInputType.visiblePassword,
-                  obscureText:true,
+                  obscureText:passwordVisible,
 
                 ),
               ),
