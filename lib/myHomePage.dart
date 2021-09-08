@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -10,6 +12,9 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   bool passwordVisible = true;
+  var b = Colors.black;
+  var w = Colors.white;
+  var r = Colors.red;
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
+        color: Colors.black,
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -27,45 +33,46 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Container(
                 margin: EdgeInsets.all(20.0),
-                color: Colors.lime,
+                // color: Colors.lime,
                 child: TextField(
                   decoration: InputDecoration(
                       icon: Icon(
                         Icons.mail_outline,
                         size: 30,
-                        color: Colors.black,
+                          color: r
                       ),
                       labelText: "Adress Mail",
-                      labelStyle: TextStyle(fontSize: 20, color: Colors.black),
+                      labelStyle: TextStyle(fontSize: 20, color: r),
                       hintText: "Enter eMail",
-                      hintStyle: TextStyle(
-                        fontSize: 15,
-                      )),
+                      hintStyle: TextStyle(fontSize: 15, color: w)
+                  ),
                   keyboardType: TextInputType.emailAddress,
+                  style: TextStyle(color: w),
                 ),
               ),
               //box n 1 Passworde
               SizedBox(
                 height: 20,
+
               ),
               Container(
                 margin: EdgeInsets.all(20.0),
-                color: Colors.orange,
+                // color: Colors.orange,
                 child: TextField(
                   decoration: InputDecoration(
                       icon: Icon(
                         Icons.password,
                         size: 30,
-                        color: Colors.black,
+                          color: r
                       ),
                       labelText: "Passeword",
-                      labelStyle: TextStyle(fontSize: 20, color: Colors.black),
+                      labelStyle: TextStyle(fontSize: 20, color: r),
                       hintText: "Enter Passeword",
-                      hintStyle: TextStyle(
-                        fontSize: 15,
-                      )),
+                      hintStyle: TextStyle(fontSize: 15, color: w)
+                  ),
                   keyboardType: TextInputType.visiblePassword,
                   obscureText: true,
+                  style: TextStyle(color: w),
                 ),
               ),
               //box n 2 email
@@ -74,21 +81,23 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Container(
                 margin: EdgeInsets.all(20.0),
-                color: Colors.lime,
+                // color: Colors.lime,
                 child: TextField(
                   decoration: InputDecoration(
-                      icon: Icon(
+                      prefixIcon: Icon(
                         Icons.mail_outline,
                         size: 30,
-                        color: Colors.black,
+                          color: r
                       ),
                       labelText: "Adress Mail",
-                      labelStyle: TextStyle(fontSize: 20, color: Colors.black),
+                      labelStyle: TextStyle(fontSize: 20,
+                          color: r),
                       hintText: "Enter eMail",
                       hintStyle: TextStyle(
-                        fontSize: 15,
+                        fontSize: 15, color: r
                       )),
                   keyboardType: TextInputType.emailAddress,
+                  style: TextStyle(color: w),
                 ),
               ),
               //box n 2 Passworde
@@ -97,28 +106,31 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Container(
                 margin: EdgeInsets.all(20.0),
-                color: Colors.orange,
+                // color: Colors.orange,
                 child: TextField(
                   decoration: InputDecoration(
                       suffixIcon: IconButton(
                         icon: Icon(
-                          passwordVisible? Icons.visibility_off: Icons.visibility,
-                          color: Colors.black,
+                          passwordVisible
+                              ? Icons.visibility_off
+                              : Icons.visibility,
+                            color: r
                         ),
-                        onPressed: (){
+                        onPressed: () {
                           setState(() {
-                          passwordVisible=!passwordVisible;
+                            passwordVisible = !passwordVisible;
                           });
                         },
                       ),
                       labelText: "Passeword",
-                      labelStyle: TextStyle(fontSize: 20, color: Colors.black),
+                      labelStyle: TextStyle(fontSize: 20,color: r),
                       hintText: "Enter Passeword",
                       hintStyle: TextStyle(
-                        fontSize: 15,
+                        fontSize: 15,color: r
                       )),
                   keyboardType: TextInputType.visiblePassword,
                   obscureText: passwordVisible,
+                  style: TextStyle(color: w),
                 ),
               ),
               //box n 3 email
@@ -127,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Container(
                 margin: EdgeInsets.all(20.0),
-                color: Colors.lime,
+                // color: Colors.lime,
                 child: TextField(
                   decoration: InputDecoration(
                       icon: Icon(
@@ -139,9 +151,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       labelStyle: TextStyle(fontSize: 20, color: Colors.black),
                       hintText: "Enter eMail",
                       hintStyle: TextStyle(
-                        fontSize: 15,
+                        fontSize: 15,color: w
                       )),
                   keyboardType: TextInputType.emailAddress,
+                  style: TextStyle(color: w),
                 ),
               ),
               //box n 3 Passworde
@@ -150,7 +163,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Container(
                 margin: EdgeInsets.all(20.0),
-                color: Colors.orange,
+                // color: Colors.orange,
                 child: TextField(
                   decoration: InputDecoration(
                       icon: Icon(
@@ -162,9 +175,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       labelStyle: TextStyle(fontSize: 20, color: Colors.black),
                       hintText: "Enter Passeword",
                       hintStyle: TextStyle(
-                        fontSize: 15,
+                        fontSize: 15,color: w
                       )),
                   keyboardType: TextInputType.visiblePassword,
+                  style: TextStyle(color: w),
                 ),
               ),
             ],
