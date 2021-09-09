@@ -35,9 +35,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: EdgeInsets.all(20.0),
                 // color: Colors.lime,
                 child: TextField(
-                    textAlign: TextAlign.center,
-                    maxLines: 5,
+                    // textAlign: TextAlign.center,
+                    // maxLines: 5,
                   decoration: InputDecoration(
+                 prefixText: "+0033  ",
                       fillColor: dp,
                       filled: true,
                       enabledBorder: OutlineInputBorder(
