@@ -35,6 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: EdgeInsets.all(20.0),
                 // color: Colors.lime,
                 child: TextField(
+                    maxLines: 5,
                   decoration: InputDecoration(
                       fillColor: dp,
                       filled: true,
@@ -50,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       hintText: "TextField",
                       hintStyle: TextStyle(fontSize: 15, color: w)),
                   keyboardType: TextInputType.text,
-                  style: TextStyle(color: w),
+                  style: TextStyle(color: w)
                 ),
               ),
               //box n 1 email
