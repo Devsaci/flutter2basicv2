@@ -35,6 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: EdgeInsets.all(20.0),
                 // color: Colors.lime,
                 child: TextField(
+                    textAlign: TextAlign.center,
                     maxLines: 5,
                   decoration: InputDecoration(
                       fillColor: dp,
