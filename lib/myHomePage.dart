@@ -187,13 +187,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Container(
-                child: RaisedButton(
+                child: ElevatedButton(
                   child: Text(
                     "Get Value",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20,),
                   ),
                   onPressed: () {},
-                  color: r,
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.amber),
+                    ),
                 ),
               )
             ],
