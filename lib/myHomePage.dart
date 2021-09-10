@@ -188,13 +188,11 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Container(
                 child: ElevatedButton(
-                  child: Text(
-                    "Get Value",
-                    style: TextStyle(fontSize: 20,),
-                  ),
+                  child: Text("Get Value", style: TextStyle(fontSize: 20,),),
                   onPressed: () {},
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.amber),
+                        backgroundColor: MaterialStateProperty.all(Colors.amber),
+                        padding: MaterialStateProperty.all(EdgeInsets.all(30))
                     ),
                 ),
               )
