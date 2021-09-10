@@ -37,24 +37,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: TextField(
                     // textAlign: TextAlign.center,
                     // maxLines: 5,
-                  decoration: InputDecoration(
-                 prefixText: "+0033  ",
-                      fillColor: dp,
-                      filled: true,
-                      enabledBorder: OutlineInputBorder(
-                        borderSide:
-                        BorderSide(width: 3, color: Colors.greenAccent),
-                        borderRadius:
-                        BorderRadius.all(Radius.circular(30.0)),
-                      ),
-
-                      labelText: "TextField",
-                      labelStyle: TextStyle(fontSize: 20, color: r),
-                      hintText: "TextField",
-                      hintStyle: TextStyle(fontSize: 15, color: w)),
-                  keyboardType: TextInputType.text,
-                  style: TextStyle(color: w)
-                ),
+                    decoration: InputDecoration(
+                        prefixText: "+0033  ",
+                        fillColor: dp,
+                        filled: true,
+                        enabledBorder: OutlineInputBorder(
+                          borderSide:
+                              BorderSide(width: 3, color: Colors.greenAccent),
+                          borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                        ),
+                        labelText: "TextField",
+                        labelStyle: TextStyle(fontSize: 20, color: r),
+                        hintText: "TextField",
+                        hintStyle: TextStyle(fontSize: 15, color: w)),
+                    keyboardType: TextInputType.text,
+                    style: TextStyle(color: w)),
               ),
               //box n 1 email
               SizedBox(
@@ -65,9 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderSide:
-                        const BorderSide(width: 3, color: Colors.lime),
+                            const BorderSide(width: 3, color: Colors.lime),
                         borderRadius:
-                        const BorderRadius.all(Radius.circular(6.0)),
+                            const BorderRadius.all(Radius.circular(6.0)),
                       ),
                       icon: Icon(Icons.mail_outline, size: 30, color: r),
                       labelText: "Adress Mail",
@@ -189,6 +186,16 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(color: w),
                 ),
               ),
+              Container(
+                child: RaisedButton(
+                  child: Text(
+                    "Get Value",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  onPressed: () {},
+                  color: r,
+                ),
+              )
             ],
           ),
         ),
@@ -197,14 +204,13 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: w,
           onPressed: () {
             setState(() {
-               b = b==Colors.black?Colors.white:Colors.black;
-               w = b==Colors.white?Colors.black:Colors.white;
-               r = Colors.blue;
-               br = Colors.brown;
-               dp = Colors.yellow;
+              b = b == Colors.black ? Colors.white : Colors.black;
+              w = b == Colors.white ? Colors.black : Colors.white;
+              // r = Colors.blue;
+              br = Colors.brown;
+              dp = Colors.yellow;
             });
-          }
-      ),
+          }),
     );
   }
 }
