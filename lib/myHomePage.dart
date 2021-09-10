@@ -15,7 +15,8 @@ class _MyHomePageState extends State<MyHomePage> {
   var r = Colors.red;
   var br = Colors.brown;
   var dp = Colors.deepPurple;
-
+  var myController = TextEditingController();
+  var str = "TextField";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
         height: double.infinity,
         child: SingleChildScrollView(
           child: Column(
-            children: [
+            children: <Widget>[
               SizedBox(
                 height: 20,
               ),
@@ -37,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: TextField(
                     // textAlign: TextAlign.center,
                     // maxLines: 5,
+                    controller: myController,
                     decoration: InputDecoration(
                         prefixText: "+0033  ",
                         fillColor: dp,
@@ -46,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               BorderSide(width: 3, color: Colors.greenAccent),
                           borderRadius: BorderRadius.all(Radius.circular(30.0)),
                         ),
-                        labelText: "TextField",
+                        labelText: str,
                         labelStyle: TextStyle(fontSize: 20, color: r),
                         hintText: "TextField",
                         hintStyle: TextStyle(fontSize: 15, color: w)),
@@ -186,16 +188,26 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextStyle(color: w),
                 ),
               ),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                 child: ElevatedButton(
-                  child: Text("Get Value", style: TextStyle(fontSize: 20,),),
-                  onPressed: () {},
+                  child: Text("Get Value", style: TextStyle(fontSize: 35,color: w),),
+                  onPressed: () {
+                    setState(() {
+                        str = myController.text;
+                    });
+                  },
                     style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all(Colors.amber),
-                        padding: MaterialStateProperty.all(EdgeInsets.all(30))
+                        padding: MaterialStateProperty.all(EdgeInsets.fromLTRB(30,10,30,10))
                     ),
                 ),
-              )
+              ),
+              SizedBox(
+                height: 60,
+              ),
             ],
           ),
         ),
